@@ -1,0 +1,6 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find ituauv_uuv_descriptions)/urdf/sensors/magnetometer_snippets.xacro"/>
+  <xacro:include filename="$(find ituauv_uuv_descriptions)/urdf/sensors/imu_snippets.xacro"/>
+  <xacro:include filename="$(find ituauv_uuv_descriptions)/urdf/sensors/pressure_snippets.xacro"/>
+  <xacro:include filename="$(find ituauv_uuv_descriptions)/urdf/sensors/sonar_snippets.xacro"/>
+</robot>

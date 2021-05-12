@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ituauv_uuv_descriptions</name>
+  <version>0.1.0</version>
+  <description>The ituauv_uuv_descriptions package</description>
+  <maintainer email="senceryazici@gmail.com">Sencer Yazici</maintainer>
+  <author email="senceryazici@gmail.com">Sencer Yazici</author>
+  <license>MIT</license>
+  <!-- <url type="website">http://wiki.ros.org/ituauv_uuv_descriptions</url> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>uuv_assistants</build_depend>
+  <build_depend>uuv_descriptions</build_depend>
+  <build_depend>uuv_gazebo</build_depend>
+  <build_depend>uuv_gazebo_ros_plugins</build_depend>
+  <build_depend>uuv_sensor_ros_plugins</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>uuv_assistants</build_export_depend>
+  <build_export_depend>uuv_descriptions</build_export_depend>
+  <build_export_depend>uuv_gazebo</build_export_depend>
+  <build_export_depend>uuv_gazebo_ros_plugins</build_export_depend>
+  <build_export_depend>uuv_sensor_ros_plugins</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>uuv_assistants</exec_depend>
+  <exec_depend>uuv_descriptions</exec_depend>
+  <exec_depend>uuv_gazebo</exec_depend>
+  <exec_depend>uuv_gazebo_ros_plugins</exec_depend>
+  <exec_depend>uuv_sensor_ros_plugins</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
