@@ -67,7 +67,7 @@
 
 	<!--
 	BlueRobotics T200 Thruster macro
-	Refer to: https://bluerobotics.com/store/retired/t100-thruster/
+	Refer to: https://www.bluerobotics.com/store/thrusters/t100-t200-thrusters/t200-thruster-r2-rp/
 	-->
 	<xacro:macro name="t200_thruster" params="namespace thruster_id *origin">
 		<link name="${namespace}/thruster_${thruster_id}">
