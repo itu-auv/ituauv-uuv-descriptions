@@ -21,23 +21,35 @@
     </joint>
 
     <xacro:dvl_single_sonar
-      namespace="${namespace}" suffix=""
-      index="0" pitch="-0.52" yaw="0.0">
+      namespace="${namespace}" 
+      suffix=""
+      index="0" 
+      update_rate="${update_rate}" 
+      pitch="-0.52" yaw="0.0">
     </xacro:dvl_single_sonar>
 
     <xacro:dvl_single_sonar
-      namespace="${namespace}" suffix=""
-      index="1" pitch="0" yaw="0.52">
+      namespace="${namespace}" 
+      suffix=""
+      index="1" 
+      update_rate="${update_rate}" 
+      pitch="0" yaw="0.52">
     </xacro:dvl_single_sonar>
 
     <xacro:dvl_single_sonar
-      namespace="${namespace}" suffix=""
-      index="2" pitch="0.52" yaw="0.0">
+      namespace="${namespace}" 
+      suffix=""
+      index="2" 
+      update_rate="${update_rate}" 
+      pitch="0.52" yaw="0.0">
     </xacro:dvl_single_sonar>
 
     <xacro:dvl_single_sonar
-      namespace="${namespace}" suffix=""
-      index="3" pitch="0.0" yaw="-0.52">
+      namespace="${namespace}" 
+      suffix=""
+      index="3" 
+      update_rate="${update_rate}" 
+      pitch="0.0" yaw="-0.52">
     </xacro:dvl_single_sonar>
 
     <gazebo>
@@ -64,6 +76,7 @@
       </plugin>
     </gazebo>
   </xacro:macro>
+  
   <xacro:macro name="navquest_dvl" params="namespace topic parent_link *origin">
     <xacro:auv_dvl_macro
       namespace="${namespace}"
