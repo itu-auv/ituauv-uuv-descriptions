@@ -1,6 +1,26 @@
 <?xml version="1.0"?>
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+	<xacro:macro name="xsens_mti_g710_mag" params="namespace topic parent_link *origin">
+		<xacro:__ituauv_magnetometer_macro
+			namespace="${namespace}"
+			suffix=""
+			parent_link="${parent_link}"
+			topic="${topic}"
+			mass="0.015"
+			update_rate="80"
+			mag_intensity="65.0"
+			noise_xy="1.0"
+			noise_z="1.4"
+			noise_amplitude="0.1"
+			turn_on_bias="2.0">
+			<inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001" />
+			<origin xyz="0 0 0" rpy="0 0 0" />
+		</xacro:__ituauv_magnetometer_macro>
+	</xacro:macro>
+
+
 	<xacro:macro name="__ituauv_magnetometer_macro" params="namespace suffix parent_link topic mass update_rate
 mag_intensity noise_xy noise_z turn_on_bias noise_amplitude
 *inertia *origin">
